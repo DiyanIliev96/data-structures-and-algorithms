@@ -1,4 +1,4 @@
-package double_linked_list.reverse;
+package doubly_linked_list.reverse;
 
 public class Main {
     public static void main(String[] args) {
