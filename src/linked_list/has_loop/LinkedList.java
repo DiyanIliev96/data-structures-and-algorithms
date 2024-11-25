@@ -1,4 +1,4 @@
-package has_loop;
+package linked_list.has_loop;
 
 public class LinkedList {
     private Node head;
