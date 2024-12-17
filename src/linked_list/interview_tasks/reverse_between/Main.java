@@ -1,4 +1,4 @@
-package linked_list.reverse_between;
+package linked_list.interview_tasks.reverse_between;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package linked_list.remove_duplicates;
+package linked_list.interview_tasks.remove_duplicates;
 
 import java.util.HashSet;
 

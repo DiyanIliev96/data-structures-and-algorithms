@@ -1,22 +1,27 @@
-package linked_list.find_kth_node_from_end;
+package linked_list.interview_tasks.has_loop;
 
 public class Main {
     public static void main(String[] args) {
+
         LinkedList myLinkedList = new LinkedList(1);
         myLinkedList.append(2);
         myLinkedList.append(3);
         myLinkedList.append(4);
         myLinkedList.append(5);
 
-        int k = 2;
-        int result = myLinkedList.findKthFromEnd(k).value;
+        // create a loop by connecting the tail to the second node
+        myLinkedList.getTail().next = myLinkedList.getHead().next;
 
-        System.out.println(result); // Output: 4
+
+        System.out.println("Has Loop:");
+        System.out.println( myLinkedList.hasLoop());
+
 
         /*
             EXPECTED OUTPUT:
             ----------------
-            4
+            Has Loop:
+            true
 
         */
 

@@ -1,4 +1,4 @@
-package linked_list.partition_list;
+package linked_list.interview_tasks.partition_list;
 
 public class Main {
     public static void main(String[] args) {
