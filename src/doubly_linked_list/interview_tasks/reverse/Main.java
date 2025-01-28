@@ -1,4 +1,4 @@
-package doubly_linked_list.reverse;
+package doubly_linked_list.interview_tasks.reverse;
 
 public class Main {
     public static void main(String[] args) {
