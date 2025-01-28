@@ -1,8 +1,9 @@
-package linked_list.interview_tasks.find_kth_node_from_end;
+package linked_list.interview_questions.find_middle_note;
 
 public class LinkedList {
     private Node head;
     private Node tail;
+
     class Node {
         int value;
         Node next;
@@ -66,51 +67,22 @@ public class LinkedList {
         }
     }
 
-    // WRITE FINDKTHFROMEND METHOD HERE //
-    //                                  //
-    //                                  //
-    //                                  //
-    //                                  //
-    //////////////////////////////////////
-
-    public Node removeLast() {
-        Node current = head;
-        if (head == tail) {
-            head = null;
-            tail = null;
-            return current;
-        }
-        if (head == null || tail == null) {
+    // WRITE FIND MIDDLE NODE METHOD HERE //
+    //                                    //
+    //                                    //
+    //                                    //
+    //                                    //
+    ////////////////////////////////////////
+    public Node findMiddleNode() {
+        Node slowPointer = head;
+        Node fasterPointer = slowPointer;
+        if (slowPointer == null) {
             return null;
         }
-        Node temp = tail;
-
-        while (current.next != temp) {
-            current = current.next;
+        while(fasterPointer != null && fasterPointer.next != null) {
+            slowPointer = slowPointer.next;
+            fasterPointer = fasterPointer.next.next;
         }
-        current.next = null;
-        tail = current;
-        return temp;
-    }
-
-
-
-    public Node findKthFromEnd(int k) {
-        Node slow = head;
-        Node faster = head;
-
-        for (int i = 0; i < k ; i++ ) {
-
-            if (faster == null) {
-                return null;
-            }
-            faster = faster.next;
-        }
-
-        while (faster != null) {
-            slow = slow.next;
-            faster = faster.next;
-        }
-        return slow;
+        return slowPointer;
     }
 }

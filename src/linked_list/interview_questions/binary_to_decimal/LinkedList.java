@@ -1,4 +1,4 @@
-package linked_list.interview_tasks.binary_to_decimal;
+package linked_list.interview_questions.binary_to_decimal;
 
 public class LinkedList {
 

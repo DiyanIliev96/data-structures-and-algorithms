@@ -1,4 +1,4 @@
-package linked_list.interview_tasks.reverse_between;
+package linked_list.interview_questions.reverse_between;
 
 public class LinkedList {
     private Node head;

@@ -1,4 +1,4 @@
-package linked_list.interview_tasks.find_middle_note;
+package linked_list.interview_questions.find_middle_note;
 
 public class Main {
     public static void main(String[] args) {
